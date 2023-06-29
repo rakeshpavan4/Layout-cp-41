@@ -1,0 +1,9 @@
+/* Write your CSS here */
+.config-container {
+  display: flex;
+  flex-direction: column;
+  background-color: aquamarine;
+}
+.config-heading {
+  color: black;
+}
