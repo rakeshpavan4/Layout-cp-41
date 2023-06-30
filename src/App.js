@@ -11,15 +11,15 @@ import './App.css'
 class App extends Component {
   state = {showContent: true, showLeftNavbar: true, showRightNavbar: true}
 
-  onToggleContent = () => {
+  onToggleShowContent = () => {
     this.setState(prevState => ({showContent: !prevState.showContent}))
   }
 
-  onToggleLeftNavbar = () => {
+  onToggleShowLeftNavbar = () => {
     this.setState(prevState => ({showLeftNavbar: !prevState.showLeftNavbar}))
   }
 
-  onToggleRightNavbar = () => {
+  onToggleShowRightNavbar = () => {
     this.setState(prevState => ({showRightNavbar: !prevState.showRightNavbar}))
   }
 
@@ -31,9 +31,9 @@ class App extends Component {
           showContent,
           showLeftNavbar,
           showRightNavbar,
-          onToggleContent: this.onToggleContent,
-          onToggleLeftNavbar: this.onToggleLeftNavbar,
-          onToggleRightNavbar: this.onToggleRightNavbar,
+          onToggleShowContent: this.onToggleShowContent,
+          onToggleShowLeftNavbar: this.onToggleShowLeftNavbar,
+          onToggleShowRightNavbar: this.onToggleShowRightNavbar,
         }}
       >
         <div className="app-container">

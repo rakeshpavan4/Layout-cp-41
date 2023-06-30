@@ -10,18 +10,20 @@ const ConfigurationController = () => (
         showContent,
         showLeftNavbar,
         showRightNavbar,
-        onToggleContent,
-        onToggleLeftNavbar,
-        onToggleRightNavbar,
+        onToggleShowContent,
+        onToggleShowLeftNavbar,
+        onToggleShowRightNavbar,
       } = value
       const onChangeContent = () => {
-        onToggleContent()
+        onToggleShowContent()
       }
-      const onChangeLeftNavbar = () => {
-        onToggleLeftNavbar()
+
+      const onChangeLeftNavbar = event => {
+        onToggleShowLeftNavbar(event.target.value)
       }
-      const onChangeRightNavbar = () => {
-        onToggleRightNavbar()
+
+      const onChangeRightNavbar = event => {
+        onToggleShowRightNavbar(event.target.value)
       }
 
       return (
@@ -48,7 +50,7 @@ const ConfigurationController = () => (
                   id="LeftNavbar"
                 />
                 <label className="label-text" htmlFor="LeftNavbar">
-                  LeftNavbar
+                  Left Navbar
                 </label>
               </div>
               <div className="checkbox-container">
@@ -59,7 +61,7 @@ const ConfigurationController = () => (
                   id="RightNavbar"
                 />
                 <label className="label-text" htmlFor="RightNavbar">
-                  RightNavbar
+                  Right Navbar
                 </label>
               </div>
             </div>

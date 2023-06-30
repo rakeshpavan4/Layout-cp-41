@@ -2,8 +2,11 @@
 .config-container {
   display: flex;
   flex-direction: column;
-  background-color: aquamarine;
+  background-color: #475569;
 }
 .config-heading {
-  color: black;
+  color: white;
+}
+.label-text {
+  color: white;
 }
